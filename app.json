@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "angryjoe",
+    "description": "Find the Angry Joe Mobile.",
+    "slug": "angryjoe",
+    "privacy": "public",
+    "sdkVersion": "27.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "facebookAppId" : "638125679855556",
+    "facebookDisplayName" : "Angry Joe",
+    "facebookScheme": "fb638125679855556",
+    "icon": "./assets/angryjoe_icon.png",
+    "splash": {
+      "image": "./assets/coffee.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "Smooof.angryjoe",
+      "buildNumber": "4",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need to know your current location to find the near places.  Do you allow us to use location service on this device ?",
+      },
+
+    },
+    "android": {
+      "package": "com.Smooof.angryJoe",
+      "versionCode": 2,
+      "permissions": [
+          "ACCESS_COARSE_LOCATION",
+          "ACCESS_FINE_LOCATION",
+        ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBf3bUbARGR94LhAHBI0N2NofYjClO5cr4"
+        },
+      }
+    }
+  }
+}
